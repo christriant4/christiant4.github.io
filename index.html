@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta name="description" content="University projects by Χρήστος Τριανταφυλλάκης, ICSD student at the University of the Aegean." />
+    <title>Χρήστος Τριανταφυλλάκης — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="wrap navbar">
+        <a class="wordmark" href="#top" aria-label="Go to top"><span class="wordmark-symbol">&lt;/&gt;</span><span data-name-short>Χρήστος</span><span class="wordmark-dot">.</span></a>
+        <nav aria-label="Main navigation" class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="nav-button" href="#projects">Explore work <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="top" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-school>ICSD · University of the Aegean</span></div>
+          <h1 id="hero-heading">Hi, I'm<br /><span class="gradient-text">Χρήστος.</span></h1>
+          <p class="hero-subtitle">My name is <strong data-name>Χρήστος Τριανταφυλλάκης</strong>. I am <span data-role>an ICSD student at the University of the Aegean</span>, based in Samos, Greece. These are three university projects I have worked on.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="button button-primary">View my projects <span aria-hidden="true">↗</span></a>
+            <a href="#about" class="button button-ghost">More about me <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-footer"><span class="live-dot"></span><span>Based in <span data-location>Samos, Greece</span></span><span class="hero-footer-divider"></span><span>Portfolio / <span id="current-year">2026</span></span></div>
+        </div>
+
+        <div class="hero-visual" aria-label="Decorative coding-inspired illustration" role="img">
+          <div class="visual-grid"></div>
+          <div class="floating-pill floating-pill-top"><span class="pill-icon">✦</span> curiosity → creation</div>
+          <div class="code-window">
+            <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>portfolio.js</span><span class="window-caret">↗</span></div>
+            <div class="code-lines" aria-hidden="true">
+              <div><span class="line-no">01</span> <span class="token-pink">const</span> <span class="token-sky">developer</span> = {</div>
+              <div><span class="line-no">02</span> &nbsp; focus: <span class="token-lime">'building'</span>,</div>
+              <div><span class="line-no">03</span> &nbsp; mindset: <span class="token-lime">'learning'</span>,</div>
+              <div><span class="line-no">04</span> &nbsp; ideas: <span class="token-purple">Infinity</span>,</div>
+              <div><span class="line-no">05</span> };</div>
+              <div><span class="line-no">06</span></div>
+              <div><span class="line-no">07</span> <span class="token-pink">while</span> (curious) {</div>
+              <div><span class="line-no">08</span> &nbsp; build<span class="token-yellow">(somethingNew)</span>;</div>
+              <div><span class="line-no">09</span> }</div>
+            </div>
+            <div class="window-status"><span><span class="terminal-dot"></span> running</span><span>UTF-8&nbsp; · &nbsp;JS</span></div>
+          </div>
+          <div class="floating-pill floating-pill-bottom"><span class="mini-sparkle">✳</span> always in progress</div>
+        </div>
+      </section>
+
+      <section class="projects-section section-pad" id="projects" aria-labelledby="projects-heading">
+        <div class="wrap">
+          <div class="section-heading">
+            <div><span class="section-label"><span class="section-index">01 /</span> SELECTED WORK</span><h2 id="projects-heading">Projects worth <span class="light-italic">sharing.</span></h2><p>Three university projects in software engineering, web programming and advanced robotics.</p></div>
+            <span class="section-scribble" aria-hidden="true">↘</span>
+          </div>
+          <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="about" aria-labelledby="about-heading">
+        <div class="wrap about-layout">
+          <div class="about-left"><span class="section-label"><span class="section-index">02 /</span> A LITTLE ABOUT ME</span><h2 id="about-heading">Behind the<br /><span class="gradient-text">keyboard.</span></h2><div class="about-orbit" aria-hidden="true"><span class="orbit-circle orbit-one"></span><span class="orbit-circle orbit-two"></span><span class="orbit-core">&lt;/&gt;</span></div></div>
+          <div class="about-right"><p class="about-lead" id="about-text">I'm Χρήστος Τριανταφυλλάκης, studying Information and Communication Systems Engineering at the University of the Aegean in Samos.</p><p class="about-secondary">Through my coursework, I have worked on backend APIs, web applications and a Raspberry Pi–based health-kiosk prototype. The projects above were developed as university team assignments.</p><div class="skill-area"><p class="skill-heading">TECHNOLOGIES USED IN MY PROJECTS</p><div class="skill-list" id="skills-list"></div></div></div>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact" aria-labelledby="contact-heading"><div class="wrap"><div class="contact-card"><div class="contact-decoration" aria-hidden="true">✳</div><span class="section-label">03 / SAY HELLO</span><h2 id="contact-heading">Have an idea?<br /><span>Let's connect.</span></h2><p>Find my GitHub profile to explore my work and get in touch.</p><div class="contact-actions" id="contact-actions"><span class="contact-empty"></span></div><span class="contact-lower">MADE WITH CURIOSITY AND A LOT OF COFFEE <span aria-hidden="true">✦</span></span></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="wrap footer-inner"><a href="#top" class="footer-name" data-name>Χρήστος Τριανταφυλλάκης</a><span>© <span id="footer-year">2026</span> · All rights reserved.</span><a href="#top" class="back-top">Back to top ↑</a></div></footer>
+  </body>
+</html>
