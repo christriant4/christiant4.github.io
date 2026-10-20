@@ -274,7 +274,32 @@ h2 {font-size:clamp(36px,4.3vw,55px);line-height:1.14;letter-spacing:-.06em;font
 .hero-text {font-size:clamp(14px,1.2vw,17px);max-width:700px;line-height:1.82;margin-bottom:34px;}
 .hero-footnote {margin-top:70px;}
 /* Reveal is opt-in and activates only after the observer is ready. */
-.js.motion-ready .reveal:not(.is-visible) {opacity:0;transform:translateY(28px);}
+
+/* Πιο έντονο animation στην κύλιση */
+.js.motion-ready .reveal:not(.is-visible) {
+  opacity: 0;
+  transform: translateY(65px) scale(0.97);
+}
+
+.js.motion-ready .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.js.motion-ready .reveal {
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Οι κάρτες εμφανίζονται διαδοχικά */
+.js.motion-ready .projects-grid .reveal:nth-child(3n + 2) {
+  transition-delay: 120ms;
+}
+
+.js.motion-ready .projects-grid .reveal:nth-child(3n + 3) {
+  transition-delay: 240ms;
+} {opacity:0;transform:translateY(28px);}
 .js.motion-ready .reveal.is-visible {opacity:1;transform:translateY(0);}
 .js.motion-ready .reveal {transition:opacity .68s ease, transform .68s cubic-bezier(.19,1,.22,1);}
 .js.motion-ready .projects-grid .reveal:nth-child(3n + 2) {transition-delay:65ms;}
