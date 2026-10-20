@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Νοσοκομείο">
-<path d="M13 55V19a4 4 0 0 1 4-4h30a4 4 0 0 1 4 4v36" stroke="#d5f9f5" stroke-width="3.3" stroke-linejoin="round"/>
-<path d="M9 55h46M29 55V43h6v12" stroke="#8ec1e5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="24" y="4" width="16" height="16" rx="4" fill="#72e4d4"/>
-<path d="M32 8v8M28 12h8" stroke="#092b36" stroke-width="3" stroke-linecap="round"/>
-<path d="M20 28h6M38 28h6M20 36h6M38 36h6" stroke="#83b5f0" stroke-width="3.2" stroke-linecap="round"/>
-</svg>
