@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 700" fill="none" role="img" aria-label="Δίκτυα επικοινωνιών, συστήματα τεχνητής νοημοσύνης και ρομποτική">
+  <defs>
+    <radialGradient id="aura"><stop stop-color="#2BA4BF" stop-opacity=".19"/><stop offset=".66" stop-color="#1E638D" stop-opacity=".07"/><stop offset="1" stop-color="#0A1626" stop-opacity="0"/></radialGradient>
+    <linearGradient id="mint" x1="190" y1="190" x2="480" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#75F7DC"/><stop offset=".48" stop-color="#72D7ED"/><stop offset="1" stop-color="#7E9DFD"/></linearGradient>
+    <linearGradient id="panel" x1="205" y1="210" x2="470" y2="515" gradientUnits="userSpaceOnUse"><stop stop-color="#1A3C59"/><stop offset=".48" stop-color="#0B213A"/><stop offset="1" stop-color="#142B47"/></linearGradient>
+    <linearGradient id="fiber" x1="30" y1="575" x2="343" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#38CDDB" stop-opacity="0"/><stop offset=".3" stop-color="#6FF4E0"/><stop offset="1" stop-color="#7C9DFF"/></linearGradient>
+    <linearGradient id="arm" x1="610" y1="570" x2="370" y2="290" gradientUnits="userSpaceOnUse"><stop stop-color="#172C49"/><stop offset=".45" stop-color="#315E7C"/><stop offset="1" stop-color="#77AEC3"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="33"/></filter>
+    <filter id="glow" x="-.7" y="-.7" width="2.4" height="2.4"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#65A8BA" stroke-opacity=".08" stroke-width="1"/></pattern>
+  </defs>
+  <circle cx="352" cy="341" r="334" fill="url(#aura)"/>
+  <path d="M45 352a307 307 0 0 1 307-307 307 307 0 0 1 307 307" stroke="#80CDE3" stroke-opacity=".06" stroke-width="1.5"/>
+  <circle cx="352" cy="352" r="270" stroke="#83C7E7" stroke-opacity=".11" stroke-width="1" stroke-dasharray="3 12"/>
+  <circle cx="352" cy="352" r="220" stroke="#71E8D3" stroke-opacity=".12" stroke-width="1"/>
+  <circle cx="352" cy="352" r="169" stroke="#80CDE3" stroke-opacity=".11" stroke-width="1" stroke-dasharray="7 9"/>
+  <circle cx="352" cy="352" r="123" stroke="#65C7DA" stroke-opacity=".09"/>
+  <g stroke="#80C6D8" stroke-opacity=".16" stroke-width="1">
+    <path d="M32 350H119M584 350h70M352 38v72M352 579v83"/>
+    <path d="M151 138l55 55M549 139l-50 50M155 545l42-42M549 548l-48-48"/>
+  </g>
+  <g opacity=".8"><path d="M90 234h74l31-24M582 463h-70l-31 31M75 452h108" stroke="#4AB6C8" stroke-opacity=".32" stroke-width="1.5"/><circle cx="90" cy="234" r="4" fill="#62F3DE"/><circle cx="582" cy="463" r="4" fill="#62F3DE"/><circle cx="75" cy="452" r="3" fill="#86BEFF"/></g>
+  <!-- Low-contrast data lines -->
+  <g opacity=".6" stroke="#61A3C4" stroke-width="1" stroke-dasharray="3 7">
+    <path d="M49 121h107m-73 16h70M513 590h91m-70 16h74"/>
+  </g>
+  <!-- Satellite, hovering along the upper-right arc -->
+  <g transform="translate(511 149) rotate(-24)">
+    <g stroke="#78C8E7" stroke-opacity=".72" stroke-width="2">
+      <rect x="-66" y="-20" width="40" height="42" rx="4" fill="#102C4A"/><rect x="27" y="-20" width="40" height="42" rx="4" fill="#102C4A"/>
+      <path d="M-52-19v41m13-41v41m80-41v41m13-41v41M-65-6h39M-65 8h39m54-14h38M28 8h38" stroke-opacity=".36"/>
+      <path d="M-26 1h53"/><rect x="-20" y="-12" width="40" height="25" rx="6" fill="#264961"/>
+      <path d="M0-12v-14m0 39v12m-7 0h14"/>
+    </g>
+    <circle cx="0" cy="1" r="4" fill="#92FFE1" filter="url(#glow)"/>
+  </g>
+  <path d="M513 192Q472 230 481 280" stroke="#83ECF1" stroke-opacity=".52" stroke-dasharray="5 10" stroke-width="2"/>
+  <path d="M532 199Q501 242 510 269" stroke="#83ECF1" stroke-opacity=".22" stroke-dasharray="3 9"/>
+  <circle cx="482" cy="281" r="3" fill="#A7FFF3"/>
+  <text x="519" y="105" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#89B6D0" letter-spacing="2.5">SAT / LINK</text>
+  <text x="511" y="122" font-family="Inter,system-ui,sans-serif" font-size="10" fill="#537D99" letter-spacing="1.8">01 · SIGNAL</text>
+  <!-- Micro processor with layered glass and traces -->
+  <g transform="translate(348 344)">
+    <rect x="-107" y="-115" width="214" height="230" rx="45" fill="#2FCFCA" opacity=".10" filter="url(#blur)"/>
+    <rect x="-119" y="-119" width="238" height="238" rx="48" fill="#0C1E32" stroke="#79C5E2" stroke-opacity=".28" stroke-width="2"/>
+    <rect x="-101" y="-101" width="202" height="202" rx="38" fill="url(#panel)" stroke="#92FFE3" stroke-opacity=".26" stroke-width="1.5"/>
+    <rect x="-79" y="-79" width="158" height="158" rx="24" fill="#071827" stroke="#9DE7EB" stroke-opacity=".17"/>
+    <rect x="-56" y="-56" width="112" height="112" rx="20" fill="#153A51" stroke="url(#mint)" stroke-width="2.2"/>
+    <rect x="-43" y="-43" width="86" height="86" rx="15" fill="#0D2A42"/>
+    <path d="M-29 0l18-20L9-3l20-20M-29 19l20-10L7 25l22-17" stroke="url(#mint)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-29" cy="0" r="5" fill="#7EF9DF"/><circle cx="9" cy="-3" r="5" fill="#A4CFFF"/><circle cx="29" cy="-23" r="5" fill="#7EF9DF"/><circle cx="7" cy="25" r="5" fill="#A4CFFF"/>
+    <g stroke="#63C4D5" stroke-width="2" stroke-linecap="round" stroke-opacity=".68">
+      <path d="M-58-119v-30m35 30v-30m46 30v-30m35 30v-30M-58 119v30m35-30v30m46-30v30m35-30v30"/>
+      <path d="M-119-58h-30m30 35h-30m30 46h-30m30 35h-30M119-58h30m-30 35h30m-30 46h30m-30 35h30"/>
+    </g>
+    <g fill="#6DE7E0"><circle cx="-58" cy="-149" r="3"/><circle cx="23" cy="-149" r="3"/><circle cx="149" cy="23" r="3"/><circle cx="-149" cy="-23" r="3"/></g>
+  </g>
+  <!-- abstract 3-segment robotic arm silhouetted from lower right, intersects orbital grid -->
+  <g opacity=".95">
+    <path d="M612 596l-59-31-41-57-74-38 19-39 90 32 57 56 57 12-20 57-29 8Z" fill="url(#arm)" stroke="#81BBCC" stroke-opacity=".34" stroke-width="2"/>
+    <path d="M546 478l-26 44M603 520l-19 46" stroke="#89D1DF" stroke-opacity=".25" stroke-width="2"/>
+    <circle cx="520" cy="509" r="27" fill="#102B43" stroke="#78CDE1" stroke-opacity=".7" stroke-width="3"/><circle cx="520" cy="509" r="14" fill="#284B61" stroke="#8FF4E0" stroke-opacity=".65" stroke-width="2"/>
+    <circle cx="456" cy="448" r="20" fill="#10283E" stroke="#7BC8D9" stroke-opacity=".65" stroke-width="3"/><circle cx="456" cy="448" r="7" fill="#6EECD9"/>
+    <path d="M432 427l-34-27m43 16-21-42m-25 25 2-21m26 10-2-26" stroke="#72D7DE" stroke-opacity=".78" stroke-width="6" stroke-linecap="round"/>
+    <path d="M397 379l9-10 7 8M419 362l10 6-5 10" stroke="#B4F6E9" stroke-opacity=".66" stroke-width="3"/>
+  </g>
+  <!-- Fiber optic luminous light paths, left bottom -->
+  <g stroke-linecap="round" fill="none">
+    <path d="M11 596C81 564 91 545 132 555S232 574 270 491" stroke="url(#fiber)" stroke-width="2.2"/>
+    <path d="M11 610C81 582 97 565 140 570S231 588 276 507" stroke="url(#fiber)" stroke-width="1.8" opacity=".68"/>
+    <path d="M11 625C94 609 116 584 155 589S249 588 280 523" stroke="url(#fiber)" stroke-width="1.7" opacity=".45"/>
+    <path d="M38 641C113 626 149 617 184 625S256 602 283 543" stroke="url(#fiber)" stroke-width="1.3" opacity=".32"/>
+    <circle cx="270" cy="491" r="5" fill="#7BF6EA" filter="url(#glow)"/>
+    <circle cx="276" cy="507" r="3" fill="#88BCFF"/><circle cx="280" cy="523" r="2.5" fill="#88BCFF"/>
+  </g>
+  <g font-family="Inter,system-ui,sans-serif" letter-spacing="2.5" font-size="11" fill="#7AAEC3"><text x="46" y="515">FIBER / OPTICS</text><text x="46" y="534" fill="#537F94" font-size="9">03 · DATA LINK</text><text x="370" y="185">AI / PROCESSOR</text><text x="370" y="201" fill="#537F94" font-size="9">02 · COMPUTE</text></g>
+  <g opacity=".7" stroke="#96D8E7" stroke-opacity=".45"><path d="M20 30h30M20 30v30M660 30h-30M660 30v30M20 674h30M20 674v-30M660 674h-30M660 674v-30"/></g>
+</svg>
