@@ -92,18 +92,27 @@ document.addEventListener('keydown', event => {
 });
 updateProjects();
 
-// Ήπια reveal animations, με σεβασμό σε reduced motion.
+// Reveal animations, σε κάθε κύλιση προς τα πάνω και προς τα κάτω.
+// Σε χρήστες που προτιμούν μειωμένη κίνηση, τα στοιχεία εμφανίζονται κανονικά.
 const revealItems = $$('.reveal');
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-visible');
-      revealObserver.unobserve(entry.target);
+  const revealObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      } else if (entry.boundingClientRect.bottom < -15 ||
+                 entry.boundingClientRect.top > window.innerHeight + 15) {
+        // Επαναφορά ΜΟΝΟ όταν το στοιχείο έχει βγει εντελώς από την οθόνη.
+        // Έτσι δεν τρεμοπαίζει όσο διαβάζουμε την ενότητα.
+        entry.target.classList.remove('is-visible');
+      }
     }
-  }), { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
   document.documentElement.classList.add('motion-ready');
   revealItems.forEach(item => revealObserver.observe(item));
-} else revealItems.forEach(item => item.classList.add('is-visible'));
+} else {
+  revealItems.forEach(item => item.classList.add('is-visible'));
+}
 
 // Γραμμή προόδου ανάγνωσης και ήπια αλλαγή χρώματος του header.
 const header = $('#site-header');
@@ -177,8 +186,8 @@ const EN_TRANSLATIONS = {
   "Επικοινωνία": "Contact",
   "Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων": "Department of Information and Communication Systems Engineering",
   "Πανεπιστήμιο Αιγαίου": "University of the Aegean",
-  "Γεια! Eίμαι ο": "Hi! I’m",
-  "Χρήστος!": "Chris!",
+  "Γεια! Είμαι ο": "Hi! I'm",
+  "Χρήστος!": "Christos!",
   "Φοιτητής του Τμήματος Μηχανικών Πληροφοριακών & Επικοινωνιακών Συστημάτων": "Student at the Department of Information & Communication Systems Engineering",
   "Με ενδιαφέρει να συνδυάζω τη θεωρία με την πράξη, δημιουργώντας εφαρμογές λογισμικού και ρομποτικά συστήματα και εξερευνώντας την τεχνητή νοημοσύνη και τις σύγχρονες επικοινωνίες.": "I enjoy turning ideas into practical work: building software applications and robotic systems while exploring artificial intelligence and modern communications.",
   "Δες τα έργα μου": "Explore my projects",
