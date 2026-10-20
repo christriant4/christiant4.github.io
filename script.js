@@ -100,7 +100,7 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
       entry.target.classList.add('is-visible');
       revealObserver.unobserve(entry.target);
     }
-  }), { threshold: .08, rootMargin: '0px 0px 35px 0px' });
+  }), { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
   document.documentElement.classList.add('motion-ready');
   revealItems.forEach(item => revealObserver.observe(item));
 } else revealItems.forEach(item => item.classList.add('is-visible'));
